@@ -1,0 +1,9 @@
+[Unit]
+Description=Naive net
+
+[Service]
+Type=simple
+ExecStart=naive /etc/naive/client.config.json
+
+[Install]
+WantedBy=multi-user.target

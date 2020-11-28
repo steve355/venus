@@ -1,0 +1,6 @@
+{
+  "listen": "socks://0.0.0.0:1080",
+  "proxy": "https://USERNAME:PASSWORD@YOUR-DOMAIN-NAME-HERE",
+  "log": "",
+  "padding": true
+}

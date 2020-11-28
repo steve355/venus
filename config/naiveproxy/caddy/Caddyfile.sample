@@ -1,0 +1,16 @@
+https://YOUR-DOMAIN-NAME-HERE {
+  gzip
+  tls admin@YOUR-DOMAIN-NAME
+  root /naiveproxy/caddy/public
+  log stdout
+  errors stdout
+  forwardproxy {
+      basicauth USERNAME PASSWORD
+      hide_ip
+      hide_via
+      probe_resistance SOME-RANDOM-CHARS.localhost
+      upstream http://localhost:8080
+    }
+}
+
+
